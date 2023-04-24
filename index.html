@@ -1,19 +1,100 @@
-<html>
-<HEAD><title>Todo App</title>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <title>Todo App</title>
+</head>
 <body>
-<div class="aaa"><img src="./eisenhower-matrix.jpg"><a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a></div>
-<div class="centered-main-page-element"><p id='topSectionForAddingElementToList'><label for="new-task">Add Item</label><div class="task-row-wrapper"><input id='new-task'class="task" type="text"><button>Add</button></div>
-</p><h3>Todo</h3>
-<ul id='incompleteTasks'>
-<li><input type='checkbox'><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-<li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class='edit'>Save</button><button class="delete"><img src="./remove.svg"></button></li>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-</div>
-<script type="text/javascript" SRC="app.js"></script>
+  <header>
+    <div class="matrix">
+        <img class="matrix__img" src="./eisenhower-matrix.jpg" alt="the eisenhower matrix">
+        <a 
+            class="matrix__info" 
+            href="https://goal-life.com/page/method/matrix-eisenhower">
+            Want more details?
+        </a>
+      </div>
+  </header>
+  <main>
+    <section class="wraper">
+        <div class="add-tasks">
+            <p>
+              <label 
+                  class="add-tasks__label" 
+                  for="new-task">
+                  Add Item
+              </label>
+              <div class="add-tasks__wraper">
+                <input id="new-task" class="input-text input" type="text">
+                <button class="button">Add</button>
+              </div>
+            </p>
+        </div>    
+    </section>
+    <section class="wraper">
+        <h3 class="section-title">Todo</h3>
+        <ul id="incompl-tasks" class="incompl-tasks list">
+          <li class="list__item">
+            <input class="input-check input" type="checkbox">
+            <label 
+                for="task-incompl" 
+                class="label edit__label">
+                Pay Bills
+            </label>
+            <input 
+                id="task-incompl" 
+                type="text"
+                value="Pay Bills"
+                class="input-text incompl-tasks__item input">
+            <button class="btn-edit button">Edit</button>
+            <button class="btn-delete button">
+              <img class="img" src="./remove.svg" alt="delete-icon">
+            </button>
+          </li>
+          <li class="edit list__item"> <!-- ????edit v js -->
+            <input class="input-check input" type="checkbox">
+            <label 
+                for="edit-mode" 
+                class="label edit__label">
+                Go Shopping
+            </label>
+            <input 
+                id="edit-mode" 
+                type="text" 
+                value="Go Shopping" 
+                class="input-text input incompl-tasks__item">
+            <button class="btn-edit button">Save</button>
+            <button class="btn-delete button">
+              <img class="img" src="./remove.svg" alt="delete-icon">
+            </button>
+          </li>
+        </ul>
+    </section>
+    <section class="wraper">
+        <h3 class="section-title">Completed</h3>
+        <ul id="compl-tasks" class="compl-tasks list">
+          
+            <li class="list__item">
+                <input 
+                class="input-check input" 
+                type="checkbox" 
+                checked>
+        <label 
+                for="tasks-compl" 
+                class="label compl-tasks__label"> <!-- ???label -->
+                See the Doctor
+            </label>
+            <input 
+                type="text" 
+                class="input-text compl-tasks__item input">
+            <button class="btn-edit button">Edit</button>
+            <button class="btn-delete button">
+              <img class="img" src="./remove.svg" alt="delete-icon">
+            </button>
+          </li>
+        </ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
 </body>
 </html>
