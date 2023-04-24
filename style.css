@@ -4,50 +4,50 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.matrix { /*  */
+.matrix { 
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.matrix__img {/*  */
+.matrix__img {
     width: 100%;
 }
-.matrix__info {/*  */
+.matrix__info {
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {/*  */
-.matrix { text-align: center;
+@media (max-width:768px) {
+    .matrix { text-align: center;
 }
 }
-.add-tasks {/*  */
+.add-tasks {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
 .input-text,
-.label { /*  */
+.label { 
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
-.add-tasks__wraper { /*  */
+.add-tasks__wraper { 
     display: flex;
 }
-.list {/*  */
+.list {
     margin:0;
     padding: 0px;
 }
-.list__item, /*  */
+.list__item, 
 .section-title {
     list-style:none;
 }
-.input,/**/
+.input,
 .button{
     outline:none;
 }
-.button {/*  */
+.button {
     background: none;
     border: 0px;
     color: #888;
@@ -56,12 +56,12 @@ body {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-.button:hover {/*  */
+.button:hover {
     color: #3a3A3a;
 }
 /* Heading */
 .section-title,
-.add-tasks__label {/*  */
+.add-tasks__label {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -70,7 +70,7 @@ body {
     margin: 0;
     text-transform: uppercase;
 }
-.input-text {/*  */
+.input-text {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -82,16 +82,16 @@ body {
     font-family: Lato, sans-serif;
     color: #888;
 }
-.input-text:focus {/*  */
+.input-text:focus {
     color: #333;
 }
 
 /* New Task */
-.add-tasks__label {/*  */
+.add-tasks__label {
     display: block;
     margin: 0 0 20px;
 }
-#new-task { /*  */
+#new-task { 
     width: 318px;
 }
 
@@ -105,28 +105,28 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.list__item > * {/*  */
+.list__item > * {
     vertical-align: middle;
 }
 
-.input-check {/*  */
+.input-check {
     margin: 0 10px;
 }
-.label {/*  */
+.label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-.input-text:not(:first-of-type) {/*  */
+.input-text:not(:first-of-type) {
     width: 226px
 }
-.img {/*  */
+.img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.img:hover {/*  */
+.img:hover {
     transform: rotateZ(0);
 }
 
@@ -136,7 +136,7 @@ body {
     color: #888;
 }
 
-/* Edit Task *//* ????????????????? */
+/* Edit Task */
 
 
 .list__item .input-text {
