@@ -5,84 +5,95 @@
   <title>Todo App</title>
 </head>
 <body>
-  <div class="matrix">
-    <img class="matrix__img" src="./eisenhower-matrix.jpg">
-    <a 
-        class="matrix__info" 
-        href="https://goal-life.com/page/method/matrix-eisenhower">
-        Want more details?
-    </a>
-  </div>
-  <div class="add-tasks">
-    <p>
-      <label 
-          class="add-tasks__label" 
-          for="new-task">
-          Add Item
-      </label>
-      <div class="add-tasks__wraper">
-        <input id="new-task" class="input-text input" type="text">
-        <button class="button">Add</button>
+  <header>
+    <div class="matrix">
+        <img class="matrix__img" src="./eisenhower-matrix.jpg">
+        <a 
+            class="matrix__info" 
+            href="https://goal-life.com/page/method/matrix-eisenhower">
+            Want more details?
+        </a>
       </div>
-    </p>
-    <h3 class="section-title">Todo</h3>
-    <ul id="incompl-tasks" class="incompl-tasks list">
-      <li class="list__item">
-        <input class="input-check input" type="checkbox">
-        <label 
-            for="task-incompl" 
-            class="label">
-            Pay Bills
-        </label>
-        <input 
-            id="task-incompl" 
-            type="text" 
-            class="input-text incompl-tasks__item input">
-        <button class="btn-edit button">Edit</button>
-        <button class="btn-delete button">
-          <img class="img" src="./remove.svg">
-        </button>
-      </li>
-      <li class="edit list__item"> <!-- ????edit v js -->
-        <input class="input-check input" type="checkbox">
-        <label 
-            for="edit-mode" 
-            class="label edit__label">
-            Go Shopping
-        </label>
-        <input 
-            id="edit-mode" 
-            type="text" 
-            value="Go Shopping" 
-            class="input-text input">
-        <button class="btn-edit button">Save</button>
-        <button class="btn-delete button">
-          <img class="img" src="./remove.svg">
-        </button>
-      </li>
-    </ul>
-    <h3 class="section-title">Completed</h3>
-    <ul id="compl-tasks" class="compl-tasks list">
-      <li class="list__item">
-        <input 
-            class="input-check input" 
-            type="checkbox" 
-            checked>
-        <label 
-            for="tasks-compl" 
-            class="label compl-tasks__label"> <!-- ???label -->
-            See the Doctor
-        </label>
-        <input 
-            type="text" 
-            class="input-text compl-tasks__item input">
-        <button class="btn-edit button">Edit</button>
-        <button class="btn-delete button">
-          <img class="img" src="./remove.svg">
-        </button>
-      </li>
-    </ul>
-  </div>
+  </header>
+  <main>
+    <section class="wraper">
+        <div class="add-tasks">
+            <p>
+              <label 
+                  class="add-tasks__label" 
+                  for="new-task">
+                  Add Item
+              </label>
+              <div class="add-tasks__wraper">
+                <input id="new-task" class="input-text input" type="text">
+                <button class="button">Add</button>
+              </div>
+            </p>
+        </div>    
+    </section>
+    <section class="wraper">
+        <h3 class="section-title">Todo</h3>
+        <ul id="incompl-tasks" class="incompl-tasks list">
+          <li class="list__item">
+            <input class="input-check input" type="checkbox">
+            <label 
+                for="task-incompl" 
+                class="label">
+                Pay Bills
+            </label>
+            <input 
+                id="task-incompl" 
+                type="text" 
+                class="input-text incompl-tasks__item input">
+            <button class="btn-edit button">Edit</button>
+            <button class="btn-delete button">
+              <img class="img" src="./remove.svg">
+            </button>
+          </li>
+          <li class="edit list__item"> <!-- ????edit v js -->
+            <input class="input-check input" type="checkbox">
+            <label 
+                for="edit-mode" 
+                class="label edit__label">
+                Go Shopping
+            </label>
+            <input 
+                id="edit-mode" 
+                type="text" 
+                value="Go Shopping" 
+                class="input-text input">
+            <button class="btn-edit button">Save</button>
+            <button class="btn-delete button">
+              <img class="img" src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+    </section>
+    <section class="wraper">
+        <h3 class="section-title">Completed</h3>
+        <ul id="compl-tasks" class="compl-tasks list">
+          <li class="list__item">
+            <input 
+                class="input-check input" 
+                type="checkbox" 
+                checked>
+            <label 
+                for="tasks-compl" 
+                class="label compl-tasks__label"> <!-- ???label -->
+                See the Doctor
+            </label>
+            <input 
+                type="text" 
+                class="input-text compl-tasks__item input">
+            <button class="btn-edit button">Edit</button>
+            <button class="btn-delete button">
+              <img class="img" src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+    </section>
+    
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
