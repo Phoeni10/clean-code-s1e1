@@ -14,68 +14,71 @@
     </a>
   </div>
   <div class="add-tasks">
-    <p id="tasks-add">
-      <label for="new-task">Add Item</label>
+    <p>
+      <label 
+          class="add-tasks__label" 
+          for="new-task">
+          Add Item
+      </label>
       <div class="add-tasks__wraper">
-        <input id="new-task" class="add-tasks__item" type="text">
-        <button>Add</button>
+        <input id="new-task" class="input-text input" type="text">
+        <button class="button">Add</button>
       </div>
     </p>
     <h3 class="section-title">Todo</h3>
-    <ul>
-      <li class="incompl-tasks">
-        <input class="incompl-tasks__check" type="checkbox">
+    <ul id="incompl-tasks" class="incompl-tasks list">
+      <li class="list__item">
+        <input class="input-check input" type="checkbox">
         <label 
             for="task-incompl" 
-            class="incomp-tasks__label">
+            class="label">
             Pay Bills
         </label>
         <input 
             id="task-incompl" 
             type="text" 
-            class="incompl-tasks__item">
-        <button class="incompl-tasks__btn-edit">Edit</button>
-        <button class="incompl-tasks__btn-delete">
-          <img class="incompl-tasks__img" src="./remove.svg">
+            class="input-text incompl-tasks__item input">
+        <button class="btn-edit button">Edit</button>
+        <button class="btn-delete button">
+          <img class="img" src="./remove.svg">
         </button>
       </li>
-      <li class="edit">
-        <input class="edit__check" type="checkbox">
+      <li class="edit list__item"> <!-- ????edit v js -->
+        <input class="input-check input" type="checkbox">
         <label 
             for="edit-mode" 
-            class="edit__label">
+            class="label edit__label">
             Go Shopping
         </label>
         <input 
             id="edit-mode" 
             type="text" 
             value="Go Shopping" 
-            class="edit__item">
-        <button class="edit__btn-edit">Save</button>
-        <button class="edit__btn-delete">
-          <img class="edit__img" src="./remove.svg">
+            class="input-text input">
+        <button class="btn-edit button">Save</button>
+        <button class="btn-delete button">
+          <img class="img" src="./remove.svg">
         </button>
       </li>
     </ul>
     <h3 class="section-title">Completed</h3>
-    <ul id="compl-tasks">
-      <li>
+    <ul id="compl-tasks" class="compl-tasks list">
+      <li class="list__item">
         <input 
-            class="compl-tasks__check" 
+            class="input-check input" 
             type="checkbox" 
             checked>
         <label 
             for="tasks-compl" 
-            class="compl-tasks__label">
+            class="label compl-tasks__label"> <!-- ???label -->
             See the Doctor
         </label>
         <input 
-            id="tasks-compl" 
             type="text" 
-            class="compl-tasks__item">
-        <button class="compl-tasks__btn-edit">Edit</button>
-        <button class="compl-tasks__btn-delete">
-          <img class="compl-tasks__img" src="./remove.svg">
+            class="input-text compl-tasks__item input">
+        <button class="btn-edit button">Edit</button>
+        <button class="btn-delete button">
+          <img class="img" src="./remove.svg">
         </button>
       </li>
     </ul>
